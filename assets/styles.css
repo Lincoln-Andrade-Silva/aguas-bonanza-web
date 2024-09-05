@@ -104,6 +104,24 @@ nav .navbar .menu {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 768px) {
+    .service-box {
+        width: 90vw;
+        padding: 10px;
+        max-width:90vw;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+    .service-container {
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+        justify-items: center;
+        justify-content: center;
+    }
+}
+
+
 .service-box i.icon {
     font-size: 50px;
     margin-bottom: 15px;
@@ -227,6 +245,12 @@ nav .navbar .menu {
     text-align: justify;
 }
 
+.footer-text{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: clamp(9px, 3vw, 12px);
+}
+
 .card-subtitle {
     margin-top: 15px;
     color: rgb(104, 104, 104);
@@ -306,11 +330,12 @@ nav .navbar .menu {
 .social-icon,
 .menu {
     height: max-content;
+    width: 100%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 0;
+    margin: 3px 0;
     flex-wrap: wrap;
 }
 
@@ -332,7 +357,7 @@ nav .navbar .menu {
 }
 
 .menu__link {
-    font-size: 1.2rem;
+    font-size: clamp(9px, 3vw, 20px);
     color: #fff;
     margin: 0 10px;
     display: inline-block;
